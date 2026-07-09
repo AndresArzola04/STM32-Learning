@@ -15,6 +15,7 @@ This repo exists to document practical, hardware-verified experience with the ST
 | # | Project | Peripherals / Concepts | Status |
 |---|---------|------------------------|--------|
 | 01 | [Blinky](./01-blinky) | GPIO output, HAL_Delay, clock configuration | ✅ Complete |
+| 02 | [I2C Temp Sensor over UART](./02-i2c-uart-tmp102) | I2C master read/write, UART transmit, TMP102 sensor, bit manipulation | ✅ Complete |
 
 _(Table will grow as more tutorial modules are completed.)_
 
