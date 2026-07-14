@@ -17,6 +17,8 @@ This repo exists to document practical, hardware-verified experience with the ST
 | 01 | [Blinky](./01-blinky) | GPIO output, HAL_Delay, clock configuration | ✅ Complete |
 | 02 | [I2C Temp Sensor over UART](./02-i2c-uart-tmp102) | I2C master read/write, UART transmit, TMP102 sensor, bit manipulation | ✅ Complete |
 | 03 | [FreeRTOS Multi-Threaded Blink](./03-freertos-blink) | FreeRTOS/CMSIS-OS v2, thread creation, task priorities, hardware timer as RTOS tick | ✅ Complete |
+| 04 | [UART Transmit via DMA](./04-uart-dma) | UART + DMA, direct register control, DMA callback registration | ✅ Complete |
+| 05 | [ADC Continuous Sampling with DMA](./05-adc-dma) | ADC continuous mode, DMA peripheral-to-memory, half/full transfer callbacks | ✅ Complete |
 
 _(Table will grow as more tutorial modules are completed.)_
 
@@ -31,12 +33,15 @@ Every numbered project directory includes:
 
 - STM32CubeMX peripheral and clock configuration
 - STM32 HAL driver usage (C)
+- DMA configuration for both peripheral-to-memory (ADC) and memory-to-peripheral (UART) transfers
+- FreeRTOS/CMSIS-OS task creation and scheduling
 - STM32CubeIDE project setup, build system, and toolchain troubleshooting
 - Hardware bring-up and on-target debugging (SWD/ST-Link)
+- Peripheral/BSP conflict diagnosis (isolating and resolving competing HAL initialization calls)
 
 ## Roadmap
 
-Following along with Digi-Key's STM32 getting-started series, with each video's topic becoming its own numbered project folder here. Planned upcoming topics include UART, ADC, timers/PWM, and interrupts.
+Following along with Digi-Key's STM32 getting-started series, with each video's topic becoming its own numbered project folder here. Upcoming topics include timers/PWM and interrupt-driven I/O.
 
 ## About
 
