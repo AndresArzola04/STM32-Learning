@@ -19,6 +19,8 @@ This repo exists to document practical, hardware-verified experience with the ST
 | 03 | [FreeRTOS Multi-Threaded Blink](./03-freertos-blink) | FreeRTOS/CMSIS-OS v2, thread creation, task priorities, hardware timer as RTOS tick | ✅ Complete |
 | 04 | [UART Transmit via DMA](./04-uart-dma) | UART + DMA, direct register control, DMA callback registration | ✅ Complete |
 | 05 | [ADC Continuous Sampling with DMA](./05-adc-dma) | ADC continuous mode, DMA peripheral-to-memory, half/full transfer callbacks | ✅ Complete |
+| 06 | [SPI EEPROM Read/Write](./06-spi-eeprom) | SPI master mode, software chip select, EEPROM command set, status polling | ✅ Complete |
+| 07 | [SPI EEPROM with Interrupts](./07-spi-eeprom-interrupt) | Interrupt-driven SPI, finite state machine, ISR-to-main-loop flags | ✅ Complete |
 
 _(Table will grow as more tutorial modules are completed.)_
 
@@ -35,13 +37,15 @@ Every numbered project directory includes:
 - STM32 HAL driver usage (C)
 - DMA configuration for both peripheral-to-memory (ADC) and memory-to-peripheral (UART) transfers
 - FreeRTOS/CMSIS-OS task creation and scheduling
+- SPI master-mode communication with external devices (EEPROM), both blocking and interrupt-driven
+- Finite state machine design for non-blocking peripheral sequencing
 - STM32CubeIDE project setup, build system, and toolchain troubleshooting
 - Hardware bring-up and on-target debugging (SWD/ST-Link)
 - Peripheral/BSP conflict diagnosis (isolating and resolving competing HAL initialization calls)
 
 ## Roadmap
 
-Following along with Digi-Key's STM32 getting-started series, with each video's topic becoming its own numbered project folder here. Upcoming topics include timers/PWM and interrupt-driven I/O.
+Following along with Digi-Key's STM32 getting-started series, with each video's topic becoming its own numbered project folder here. Upcoming topics include timers/PWM.
 
 ## About
 
