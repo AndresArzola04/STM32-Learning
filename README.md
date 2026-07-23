@@ -21,6 +21,7 @@ This repo exists to document practical, hardware-verified experience with the ST
 | 05 | [ADC Continuous Sampling with DMA](./05-adc-dma) | ADC continuous mode, DMA peripheral-to-memory, half/full transfer callbacks | ✅ Complete |
 | 06 | [SPI EEPROM Read/Write](./06-spi-eeprom) | SPI master mode, software chip select, EEPROM command set, status polling | ✅ Complete |
 | 07 | [SPI EEPROM with Interrupts](./07-spi-eeprom-interrupt) | Interrupt-driven SPI, finite state machine, ISR-to-main-loop flags | ✅ Complete |
+| 08 | [Timer Interrupt (TIM16)](./08-tim16-interrupt) | Hardware timer prescaler/period configuration, timer interrupt mode, non-blocking timing | ✅ Complete |
 
 _(Table will grow as more tutorial modules are completed.)_
 
@@ -39,13 +40,14 @@ Every numbered project directory includes:
 - FreeRTOS/CMSIS-OS task creation and scheduling
 - SPI master-mode communication with external devices (EEPROM), both blocking and interrupt-driven
 - Finite state machine design for non-blocking peripheral sequencing
+- Hardware timer configuration (prescaler/period calculation) and timer-interrupt-driven design
 - STM32CubeIDE project setup, build system, and toolchain troubleshooting
 - Hardware bring-up and on-target debugging (SWD/ST-Link)
 - Peripheral/BSP conflict diagnosis (isolating and resolving competing HAL initialization calls)
 
 ## Roadmap
 
-Following along with Digi-Key's STM32 getting-started series, with each video's topic becoming its own numbered project folder here. Upcoming topics include timers/PWM.
+Following along with Digi-Key's STM32 getting-started series, with each video's topic becoming its own numbered project folder here.
 
 ## About
 
